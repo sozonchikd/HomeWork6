@@ -38,9 +38,25 @@ for (int d = 1; d <= 512; d*=2) {
 //Домашнее задание 3
         System.out.println("Задание 3.1");
 int money = 29_000;
-int month = 1;
+int month = 0;
 for (money = 29_000; month <= 12; money+=29000, month++) {
-    System.out.println(money + " месяц " + month);
+    System.out.println("Месяц " + month + " сумма накоплении равна " + money);
+}
+// Вариант 2
+int money2 =29000;
+int month2 = 0;
+for (int i = 0; i <=12; i++) {
+    month2 = month2 + money2; // 0+29000=29000
+    System.out.println("Месяц " + i + " сумма накоплении равна " + month2);
+}
+        System.out.println("Задание 3.2");
+int moneyRub = 29000;
+int total = 0;
+for (int i = 0; i <= 12; i++) {
+    total = total + total/100;
+    total = total + moneyRub;
+    System.out.println("Месяц " + i + ", сумма накоплении равна " + total + " рублей");
+
 }
 
     }
