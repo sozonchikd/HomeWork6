@@ -23,7 +23,13 @@ for (int i = 10; i >= -10; i--) {
         //Домашнее задание 2
         System.out.println("Задание 2.1");
 for (int y = 1904; y <= 2096; y+=4) {
-    System.out.println(y + " год является високосным");
+    System.out.println(y + " год является високосным");}
+    //Версия 2
+
+    for (int year = 1904; year <=2096; year++) {
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+            System.out.println(year + " год високосный!");
+    }
 }
 
         System.out.println("Задание 2.2");
