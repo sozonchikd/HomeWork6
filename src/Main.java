@@ -32,9 +32,10 @@ for (int i = 7; i <= 98; i+=7) {
 }
 
         System.out.println("Задание 2.3");
-for (int d = 1; d <= 512; d*=2) {
-    System.out.println(d);
+for (int i = 1; i <= 512; i*=2) {
+    System.out.println(i);
 }
+
 //Домашнее задание 3
         System.out.println("Задание 3.1");
 int money = 29_000;
@@ -44,18 +45,18 @@ for (money = 29_000; month <= 12; money+=29000, month++) {
 }
 // Вариант 2
 int money2 =29000;
-int month2 = 0;
+int total = 0;
 for (int i = 0; i <=12; i++) {
-    month2 = month2 + money2; // 0+29000=29000
-    System.out.println("Месяц " + i + " сумма накоплении равна " + month2);
+   total  = total + money2; // 0+29000=29000
+    System.out.println("Месяц " + i + " сумма накоплении равна " + total);
 }
         System.out.println("Задание 3.2");
 int moneyRub = 29000;
-int total = 0;
+int total2 = 0;
 for (int i = 0; i <= 12; i++) {
-    total = total + total/100;
-    total = total + moneyRub;
-    System.out.println("Месяц " + i + ", сумма накоплении равна " + total + " рублей");
+    total2 = total2 + total2/100;
+    total2 = total2 + moneyRub;
+    System.out.println("Месяц " + i + ", сумма накоплении равна " + total2 + " рублей");
 
 }
 
